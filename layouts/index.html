@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main class="homepage container py-6">
     <!-- Hero -->
-    <div class="hero row">
+    <!-- <div class="hero row">
         <div class="col position-relative py-lg-7{{ if not .Site.Params.homepageImage }} py-7{{ else }} pb-5{{ end }}">
             {{- with .Site.Params.homepageImage -}}
                 <div class="homepage-image">
@@ -14,7 +14,7 @@
                 <h3 class="font-weight-normal">{{ . | safeHTML }}</h3>
             {{- end -}}
         </div>
-    </div>
+    </div> -->
 
     <!-- Latest article -->
     {{- range first 1 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) -}}
